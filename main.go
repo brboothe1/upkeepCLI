@@ -1,8 +1,10 @@
 package main
 
 func main() {
-	createFile()
 
-	//Uncomment below and comment out createFile() to manually delete file.
-	//deleteFile()
+	funcScheduler()
+
+	//Uncomment below and comment out funcScheduler() to manually delete commitment file.
+	//deleteCommitmentFile()
+
 }
