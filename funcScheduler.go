@@ -10,7 +10,7 @@ func funcScheduler() {
 	c := cron.New()
 
 	c.AddFunc("0 8 * * *", createCommitmentFile)
-	c.AddFunc("0 9,14,17 * * *", createTextMessage)
+	c.AddFunc("30 8,14,17 * * *", createTextMessage)
 	c.AddFunc("0 22 * * *", recordDailyReflection)
 
 	c.Run()
