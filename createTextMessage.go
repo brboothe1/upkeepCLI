@@ -27,8 +27,8 @@ func createTextMessage() {
 
 	// Twilio Messaging Information
 	msgData := url.Values{}
-	msgData.Set("To", "+19548823282")
-	msgData.Set("From", "+18783484989")
+	msgData.Set("To", os.Getenv("TWILIO_TO_PHONE"))
+	msgData.Set("From", os.Getenv("TWILIO_FROM_PHONE"))
 
 	// Switch the body of the text message to the correct task for that time of day.
 	i++
